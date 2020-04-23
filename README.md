@@ -9,7 +9,7 @@ The standard allows you to instantly receive information in real time without en
     * [Blocks](#blocks)
 * [Recommended node addition process](#recommended-node-addition-process)
  
-##Entities 
+## Entities 
 
 ### Transactions
 
@@ -93,4 +93,4 @@ Binding keys example
     - node_url (amqp://guest:guest@localhost:5672)
     - Storage time in minutes (1440, 10080)
 - Create `Exchanges` type `topic` if it did not exist
-- Insert in [ноду](https://github.com/MinterTeam/minter-go-node) a code that sends one parameter with the necessary routing keys)
+- Insert in [node](https://github.com/MinterTeam/minter-go-node) a code that sends one parameter with the necessary routing keys)
