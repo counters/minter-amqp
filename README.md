@@ -3,12 +3,14 @@ Routing key structure for minter data
 
 The standard allows you to instantly receive information in real time without endless parsing of blocks, transactions and events.
 
-* Entities
+* [Entities](#entities)
     * [Transactions](#transactions)
     * [Events](#events)
     * [Blocks](#blocks)
-* [Recommended node addition process](#Recommended node addition process)
+* [Recommended node addition process](#recommended-node-addition-process)
  
+##Entities 
+
 ### Transactions
 
 Message body: `Transaction hash`
