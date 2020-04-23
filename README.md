@@ -2,6 +2,12 @@
 Routing key structure for minter data
 
 The standard allows you to instantly receive information in real time without endless parsing of blocks, transactions and events.
+
+* Entities
+    * [Transactions](#transactions)
+    * [Events](#events)
+    * [Blocks](#blocks)
+* [Recommended node addition process](#Recommended node addition process)
  
 ### Transactions
 
@@ -9,7 +15,7 @@ Message body: `Transaction hash`
 
 Шаблон: 
 
-```t{TypeTransaction}.{Recipient}.c_{Coin}.f{Sender}.{Node}.g_{Gas}.h{Height}.p{payload}```
+```t{TypeTransaction}.{Recipient}.c_{Coin}.f{Sender}.{Node}.g_{GasCoin}.h{Height}.p{payload}```
 
 Name  | Options, examples
 ----------- | -----------
@@ -78,3 +84,11 @@ Routing key examples
 Binding keys example
 - *.missed
 - h1000000.*
+
+## Recommended node addition process
+
+- Add parameters to the config node:
+    - node_url (amqp://guest:guest@localhost:5672)
+    - Storage time in minutes (1440, 10080)
+- Create `Exchanges` type `topic` if it did not exist
+- Insert in [ноду](https://github.com/MinterTeam/minter-go-node) a code that sends one parameter with the necessary routing keys)
