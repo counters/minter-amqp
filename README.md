@@ -22,23 +22,25 @@ Message body: `Transaction hash`
 Name  | Options, examples
 ----------- | -----------
 Type transaction [?](https://docs.minter.network/#section/Transactions/Types) | 1, 2, 3, ..., 14
-Recipient address  | Mx0123xxxabcd
+Recipient address  | Mx0123xxxabcd or null
 Coin  | POPE, ROBOT, BTCSECURE
 Add symbol Coin  | POPE, ROBOT, BTCSECURE
-Sender address  | Mx0123xxxabcd
-Node address  | Mp4321xxxxxdcba
+Sender address  | Mx0123xxxabcd or null
+Node address  | Mp4321xxxxxdcba or null
 Gas coin  | BIP
 Height  | 1, 120, 240, 1000000
 Availability payload  | 0, 1
 
 Routing key examples
-- t1.Mx7c39xxxxa8dc.c_ROBOT.fMxa161axxxxd444.null.g_BIP.h743.p0
-- t7.null.c_BIP.fMxc26xxxx2c06.Mp4881xxxxxx045b.g_BIP.h743.p0
+- t1.Mx7c39xxxxa8dc.c_ROBOT.s_.fMxa161axxxxd444.null.g_BIP.h743.p0
+- t7.null.c_BIP.s_.fMxc26xxxx2c06.Mp4881xxxxxx045b.g_BIP.h743.p0
+- t3.null.c_BIP.s_ROBOT.fMxc26xxxx2c06.null.g_BIP.h111.p0
 
 Binding keys example
 - *.Mx0123xxxabcd.#
 - t7.#.Mp4321xxxdcba.#
 - t4.*.c_ROBOT.#
+- \#.s_ROBOT.#
 - t5.#
 - \#.p1
 
