@@ -17,13 +17,14 @@ Message body: `Transaction hash`
 
 Шаблон: 
 
-```t{TypeTransaction}.{Recipient}.c_{Coin}.f{Sender}.{Node}.g_{GasCoin}.h{Height}.p{payload}```
+```t{TypeTransaction}.{Recipient}.c_{Coin}.s_{AddCoin}.f{Sender}.{Node}.g_{GasCoin}.h{Height}.p{payload}```
 
 Name  | Options, examples
 ----------- | -----------
 Type transaction [?](https://docs.minter.network/#section/Transactions/Types) | 1, 2, 3, ..., 14
 Recipient address  | Mx0123xxxabcd
 Coin  | POPE, ROBOT, BTCSECURE
+Add symbol Coin  | POPE, ROBOT, BTCSECURE
 Sender address  | Mx0123xxxabcd
 Node address  | Mp4321xxxxxdcba
 Gas coin  | BIP
