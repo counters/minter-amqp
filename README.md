@@ -1,6 +1,8 @@
 # minter-amqp
 Routing key structure for minter data
 
+![Minter AMQP](docs/minter-amqp.svg "Minter AMQP")
+
 The standard allows you to instantly receive information in real time without endless parsing of blocks, transactions and events.
 
 * [Entities](#entities)
